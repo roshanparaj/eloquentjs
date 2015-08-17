@@ -1,0 +1,23 @@
+<html>
+<head>
+	<title>Bean Counting (second part of the question)</title>
+</head>
+<body>
+	<script type="text/javascript">
+		/* Next, write a function called countChar that behaves like countBs, except
+	it takes a second argument that indicates the character that is to be
+	counted (rather than counting only uppercase “B” characters). Rewrite
+	countBs to make use of this new function. */
+	function countChar(str, char){
+		var count=0;
+		for (var x=0; x<str.length; x++){
+			if (str.charAt(x)===char){
+				count=count+1;
+			}
+		}
+		return count;
+	}
+	document.write(countChar("chocolate", "c"));
+	</script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<html>
+<head>
+	<title>Beans Counting</title>
+</head>
+<body>
+	<script type='text/javascript'>
+		function countBs(str){
+			var count=0;
+			for (var x=0; x<str.length; x++){
+				if ((str.charAt(x))==="B"){
+					count=count+1;
+				}
+			}
+			return count;
+		}
+		document.write(countBs("BuBket"));
+	</script>
+</body>
+</html>
